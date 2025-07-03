@@ -47,7 +47,7 @@ pip install requests web3 eth-account tronpy mnemonic bip44
 
 #### b. Konfigurasi Kunci API (Wajib untuk Fitur TRON)
 
-Buka file `scraning.py`, cari variabel `TRONGRID_API_KEY`, dan ganti dengan kunci API Trongrid milik Anda.  
+Buka file `scraning.py`, cari variabel `TRONGRID_API_KEY`,`COVALENT_API_KEY` dan ganti dengan kunci API milik Anda.  
 (Anda bisa daftar gratis di: https://www.trongrid.io)
 
 ### 3. Menjalankan Skrip
