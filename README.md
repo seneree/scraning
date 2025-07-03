@@ -51,7 +51,7 @@ Setelah instalasi selesai, jalankan skrip utama dengan perintah:
 
 python scraning.py
 
-Menu interaktif akan muncul di terminal Anda, seperti contoh di bawah ini:
+#### Menu interaktif akan muncul di terminal Anda, seperti contoh di bawah ini:
 ```text
 0. Tes semua koneksi jaringan (RPC EVM & TRON)
 1. Scan token kustom menggunakan smart contract (EVM)
