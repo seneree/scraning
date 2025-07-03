@@ -43,18 +43,20 @@ Buka terminal atau Command Prompt di folder proyek Anda.
 
 ```bash
 pip install requests web3 eth-account tronpy mnemonic bip44
+```
 
+#### b. Konfigurasi Kunci API (Wajib untuk Fitur TRON)
 
+Buka file `scraning.py`, cari variabel `TRONGRID_API_KEY`, dan ganti dengan kunci API Trongrid milik Anda.  
+(Anda bisa daftar gratis di: https://www.trongrid.io)
 
-Konfigurasi Kunci API (Wajib untuk Fitur TRON)
-Buka file scraning.py, cari variabel TRONGRID_API_KEY, dan ganti dengan kunci API Trongrid milik Anda.
+### 3. Menjalankan Skrip
 
-
-Menjalankan Skrip
 Setelah instalasi selesai, jalankan skrip utama dengan perintah:
-```bash
 
+```bash
 python scraning.py
+```
 
 #### Menu interaktif akan muncul di terminal Anda, seperti contoh di bawah ini:
 
@@ -67,6 +69,7 @@ python scraning.py
 5. Scan saldo stablecoin TRON
 6. Validasi & bersihkan mnemonic phrases dari file
 7. Keluar
+```
 
 ## 🧪 Contoh
 
@@ -77,7 +80,8 @@ python scraning.py
 [+] Wallet TVkXyz... memiliki: 1.5 USDT, 52 TRX
 [✔] RPC EVM aktif | RPC TRON aktif
 [!] 2 phrasa tidak valid ditemukan dan dihapus
+```
 
-
-- Jangan pernah membagikan file `phrases.txt` atau `privatekey.txt` Anda.
-- Jangan pernah mengunggah file yang berisi kunci privat atau mnemonic phrase ke repositori GitHub publik.
+> ⚠️ Jangan pernah membagikan file `phrases.txt` atau `privatekey.txt` Anda.  
+> ⚠️ Gunakan script ini hanya untuk keperluan mengelola banyak wallet
+> ⚠️ Kami tidak bertanggung jawab atas kehilangan dana apa pun yang terjadi akibat penggunaan script ini
