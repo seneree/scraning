@@ -48,6 +48,7 @@ Buka file scraning.py, cari variabel TRONGRID_API_KEY, dan ganti dengan kunci AP
 Menjalankan Skrip
 Setelah instalasi selesai, jalankan skrip utama dengan perintah:
 ```bash
+
 python scraning.py
 
 Menu interaktif akan muncul di terminal Anda, seperti contoh di bawah ini:
