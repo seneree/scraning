@@ -26,8 +26,8 @@ EVM_OUTPUT_FILE_PREFIX = "wallet_berisi_"  # Prefix file output untuk wallet EVM
 TRON_OUTPUT_FILE = "wallet_berisi_stablecoin_tron.txt" # File output untuk wallet TRON dengan saldo
 
 # Kunci API Anda (PASTIKAN INI SAMA PERSIS DENGAN YANG DI TRONGRID)
-COVALENT_API_KEY = "cqt_rQGJkxgQJvFF68tPCqg4kKGqqrXM"  
-TRONGRID_API_KEY = "279c0e80-a20c-49f1-9142-b7c0c9837fc" # <--- GANTI INI DENGAN KUNCI API ANDA YANG VALID
+COVALENT_API_KEY = "" # <--- GANTI INI DENGAN KUNCI API ANDA YANG VALID
+TRONGRID_API_KEY = "" # <--- GANTI INI DENGAN KUNCI API ANDA YANG VALID
 
 # Setel kunci API Trongrid sebagai variabel lingkungan untuk tronpy
 os.environ['TRONGRID_API_KEY'] = TRONGRID_API_KEY
