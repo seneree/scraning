@@ -35,9 +35,9 @@ Script Python berbasis menu CLI untuk mengelola, memindai, dan memvalidasi walle
 - **Koneksi Internet**
 
 ### 2. Instalasi & Konfigurasi
-Buka terminal atau Command Prompt di folder proyek Anda.
 
-**a. Install semua pustaka yang dibutuhkan dengan perintah:**
+**a. Install Pustaka (Library)**
+Buka terminal atau Command Prompt, lalu jalankan perintah ini untuk menginstal semua yang dibutuhkan:
 ```bash
 pip install requests web3 eth-account tronpy mnemonic bip44
 
