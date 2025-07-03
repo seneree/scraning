@@ -45,6 +45,7 @@ Buka terminal atau Command Prompt di folder proyek Anda.
 pip install requests web3 eth-account tronpy mnemonic bip44
 
 
+
 Konfigurasi Kunci API (Wajib untuk Fitur TRON)
 Buka file scraning.py, cari variabel TRONGRID_API_KEY, dan ganti dengan kunci API Trongrid milik Anda.
 
