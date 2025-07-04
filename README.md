@@ -1,6 +1,6 @@
 # 🧠 Scraning – Wallet Scanner EVM & TRON
 
-Script Python berbasis menu CLI untuk mengelola, memindai, dan memvalidasi wallet blockchain. Mendukung jaringan **EVM (Ethereum, Sepolia, Holesky, dll)** dan **TRON**. Dirancang untuk para pemburu airdrop, developer, maupun untuk audit wallet testnet.
+Script Python berbasis menu CLI untuk mengelola, memindai, dan memvalidasi wallet blockchain. Mendukung jaringan **EVM (base, arbitrum, optimism, dll)** dan **TRON**. Dirancang untuk para pemburu airdrop.
 
 ---
 
