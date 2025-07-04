@@ -1,88 +1,63 @@
-# 🧠 Scraning – Wallet Scanner EVM & TRON
 
-Script Python berbasis menu CLI untuk mengelola, memindai, dan memvalidasi wallet blockchain. Mendukung jaringan **EVM (base, arbitrum, optimism, dll)** dan **TRON**. Dirancang untuk para pemburu airdrop.
+# Aplikasi Scan & Transfer Wallet (EVM, Solana, TRON)
 
----
+## ✨ Fitur Utama
+- Scan saldo token EVM (token custom, ERC-20)
+- Scan saldo Solana (SOL dan token SPL)
+- Scan stablecoin TRON (USDT, USDC, TUSD)
+- Generate wallet baru (mnemonic & private key)
+- Kirim token dari wallet yang memiliki saldo
+- Validasi & pembersihan mnemonic
+- Deteksi alamat dari private key semua chain
 
-## ✨ Fitur
+## 📁 Struktur File
+- phrases.txt - Mnemonic untuk EVM
+- privatekeyevm.txt - Private Key EVM
+- privatekeytron.txt - Private Key TRON
+- privatekeysol.txt - Private Key Solana
+- addresevm.txt, addrestron.txt, addressol.txt - Alamat hasil scan
+- wallet_berisi_*.txt - Hasil scan wallet dengan saldo
 
-- 🔍 Scan token kustom menggunakan smart contract (EVM).
-- 💸 Kirim token dari wallet yang terdeteksi (khusus EVM).
-- 🧠 Generate wallet baru (berdasarkan *mnemonic phrase* atau *private key*).
-- 💰 Cek saldo stablecoin di jaringan TRON.
-- 🧹 Validasi dan bersihkan *mnemonic* yang tidak valid dari file.
-- 🌐 Tes koneksi ke semua RPC (EVM & TRON).
-- 📋 Menu interaktif yang simpel dan ringan.
-
----
-
-## 📦 File yang Dibutuhkan
-
-| File                 | Fungsi                                      |
-|----------------------|---------------------------------------------|
-| `scraning.py`        | Script utama aplikasi.                      |
-| `phrases.txt`        | Daftar *mnemonic phrase* untuk wallet.      |
-| `privatekeyevm.txt`  | Daftar *private key* wallet EVM (opsional). |
-| `privatekeytron.txt` | Daftar *private key* wallet TRON (opsional).|
-| `requirements.txt`   | Daftar pustaka Python yang dibutuhkan.      |
-
----
-
-## ⚙️ Cara Install & Menjalankan
-
-### 1. Prasyarat
-
-- **Python 3.8+**
-- **Koneksi Internet**
-
-### 2. Instalasi & Konfigurasi
-
-Buka terminal atau Command Prompt di folder proyek Anda.
-
-#### a. Install semua pustaka Python yang dibutuhkan:
+## 📦 Dependensi yang Dibutuhkan
+Install semua dependensi dengan perintah berikut:
 
 ```bash
-pip install requests web3 eth-account tronpy mnemonic bip44
+pip install requests web3 eth-account tronpy mnemonic bip44 solana solders spl-token
 ```
 
-#### b. Konfigurasi Kunci API (Wajib untuk Fitur TRON)
-
-Buka file `scraning.py`, cari variabel `TRONGRID_API_KEY` dan `COVALENT_API_KEY`, lalu ganti dengan kunci API milik Anda.  
-- Untuk Trongrid, daftar gratis di: https://www.trongrid.io  
-- Untuk Covalent, daftar gratis di: https://www.covalenthq.com
-
-### 3. Menjalankan Skrip
-
-Setelah instalasi selesai, jalankan skrip utama dengan perintah:
+## 🚀 Cara Menjalankan
+Jalankan script dengan Python:
 
 ```bash
 python scraning.py
 ```
 
-#### Menu interaktif akan muncul di terminal Anda, seperti contoh di bawah ini:
-
-```text
-0. Tes semua koneksi jaringan (RPC EVM & TRON)
-1. Scan token kustom menggunakan smart contract (EVM)
-2. Kirim token dari wallet yang terdeteksi (EVM only)
+## 🧩 Menu Aplikasi
+0. Tes semua koneksi jaringan
+1. Scan Saldo Token (EVM & Solana)
+2. Kirim Token dari Wallet Terdeteksi
 3. Generate wallet baru
-4. Cek alamat wallet (Private Key / Mnemonic)
-5. Scan saldo stablecoin TRON
-6. Validasi & bersihkan mnemonic phrases dari file
+4. Cek Alamat Wallet (Private Key)
+5. Scan Saldo Stablecoin TRON
+6. Validasi & Bersihkan mnemonic
 7. Keluar
-```
 
-## 🧪 Contoh
+### Keterangan Menu:
+- Menu 1:
+  - Scan token custom (input contract) dari EVM
+  - Scan saldo SOL atau SPL token dari wallet Solana
+- Menu 2:
+  - Kirim semua token yang ditemukan (EVM & Solana)
+- Menu 3:
+  - Generate mnemonic atau private key untuk EVM, TRON, atau Solana
+- Menu 4:
+  - Deteksi alamat dari private key
+- Menu 5:
+  - Cek USDT/USDC/TUSD di jaringan TRON
+- Menu 6:
+  - Validasi dan sortir mnemonic tidak valid
 
-#### Contoh Output Hasil Scan:
+⚠️ Peringatan Penting
+Skrip ini berinteraksi langsung dengan private key Anda. Pastikan Anda menggunakannya di lingkungan yang aman.
 
-```text
-[+] Wallet 0xabc123... memiliki: 0.034 ETH, 15.2 USDT
-[+] Wallet TVkXyz... memiliki: 1.5 USDT, 52 TRX
-[✔] RPC EVM aktif | RPC TRON aktif
-[!] 2 phrasa tidak valid ditemukan dan dihapus
-```
-
-> ⚠️ Jangan pernah membagikan file `phrases.txt` atau `privatekey.txt` Anda.  
-> ⚠️ Gunakan script ini hanya untuk keperluan mengelola banyak wallet
-> ⚠️ Kami tidak bertanggung jawab atas kehilangan dana apa pun yang terjadi akibat penggunaan script ini
+Risiko ditanggung oleh pengguna. Kami tidak bertanggung jawab atas kehilangan aset apa pun yang mungkin terjadi akibat penggunaan skrip ini. Selalu uji coba dengan wallet yang tidak memiliki aset signifikan.
