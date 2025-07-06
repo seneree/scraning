@@ -44,8 +44,8 @@ ADDR_TRON_OUT = "addrestron.txt"
 ADDR_SOL_OUT = "addressol.txt"
 
 # --- KUNCI API & RPC ---
-TRONGRID_API_KEY = "279c0e80-a20c-49f1-9142-b7c0c9837fc"
-HELIUS_API_KEY = "53076adb-4f6e-405b-ac56-cac1bf268ce6"
+TRONGRID_API_KEY = ""
+HELIUS_API_KEY = ""
 
 os.environ['TRONGRID_API_KEY'] = TRONGRID_API_KEY
 EVM_NETWORKS = {
