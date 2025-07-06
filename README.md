@@ -31,6 +31,29 @@ Jalankan script dengan Python:
 ```bash
 python scraning.py
 ```
+=============================
+🔧 KONFIGURASI YANG DIBUTUHKAN
+=============================
+
+1️⃣ API KEY TRONGRID (UNTUK TRON)
+-------------------------------------------------
+- Daftar gratis di: https://www.trongrid.io/
+- Login dan buat API Key di dashboard.
+- Masukkan API Key ke variabel berikut dalam script:
+
+Contoh:
+TRON_API_KEY = "ganti_dengan_api_key_anda"
+
+2️⃣ RPC SOLANA (UNTUK TRACKING TOKEN & NAMA TOKEN)
+-------------------------------------------------
+Untuk mendeteksi nama token Solana, gunakan endpoint indexing seperti:
+
+🔹 Opsi 1: HELIUS API
+- Daftar gratis: https://www.helius.xyz/
+- Buat API Key
+
+Contoh:
+HELIUS_API_KEY="ganti_dengan_api_key_anda"
 
 ## 🧩 Menu Aplikasi
 0. Tes semua koneksi jaringan
