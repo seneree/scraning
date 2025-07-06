@@ -31,10 +31,9 @@ Jalankan script dengan Python:
 ```bash
 python scraning.py
 ```
-=============================
-🔧 KONFIGURASI YANG DIBUTUHKAN
-=============================
 
+🔧 KONFIGURASI YANG DIBUTUHKAN
+WSW
 1️⃣ API KEY TRONGRID (UNTUK TRON)
 -------------------------------------------------
 - Daftar gratis di: https://www.trongrid.io/
