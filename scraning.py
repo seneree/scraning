@@ -1,4 +1,3 @@
-# === SKRIP FINAL GABUNGAN (STABIL) ===
 import os
 import re
 import sys
@@ -14,7 +13,6 @@ from bip44 import Wallet
 from decimal import Decimal
 import warnings
 
-# --- PUSTAKA SOLANA (STABIL - Berdasarkan skrip Anda yang bisa SEND) ---
 import base58
 from solana.rpc.api import Client
 from solana.rpc.commitment import Confirmed
